@@ -1,13 +1,16 @@
 $breakpoints: (s:480px, m:768px, l:992px, xl:1200px);
 
-.grid {
+.grid,
+.row {
   display: flex;
-  @each $breakpoint, $size in $breakpoints {
-    @media screen and (min-width:#{$size}) {
-      @for $i from 1 to 13 {
-        .col-#{$breakpoint}#{$i}{
-          flex-basis: $i*100%/12;
-        }
+}
+
+@each $breakpoint, $size in $breakpoints {
+  @media screen and (min-width:#{$size}) {
+    @for $i from 1 to 13 {
+      .col-#{$breakpoint}#{$i}{
+        flex-basis: $i*100%/12;
+        width: $i*100%/12;
       }
     }
   }

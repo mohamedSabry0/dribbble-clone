@@ -341,213 +341,262 @@ template {
   display: none;
 }
 
-.grid {
+.grid,
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (min-width: 480px) {
-  .grid .col-s1 {
+  .col-s1 {
     -ms-flex-preferred-size: 8.33333%;
         flex-basis: 8.33333%;
+    width: 8.33333%;
   }
-  .grid .col-s2 {
+  .col-s2 {
     -ms-flex-preferred-size: 16.66667%;
         flex-basis: 16.66667%;
+    width: 16.66667%;
   }
-  .grid .col-s3 {
+  .col-s3 {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
+    width: 25%;
   }
-  .grid .col-s4 {
+  .col-s4 {
     -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
+    width: 33.33333%;
   }
-  .grid .col-s5 {
+  .col-s5 {
     -ms-flex-preferred-size: 41.66667%;
         flex-basis: 41.66667%;
+    width: 41.66667%;
   }
-  .grid .col-s6 {
+  .col-s6 {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    width: 50%;
   }
-  .grid .col-s7 {
+  .col-s7 {
     -ms-flex-preferred-size: 58.33333%;
         flex-basis: 58.33333%;
+    width: 58.33333%;
   }
-  .grid .col-s8 {
+  .col-s8 {
     -ms-flex-preferred-size: 66.66667%;
         flex-basis: 66.66667%;
+    width: 66.66667%;
   }
-  .grid .col-s9 {
+  .col-s9 {
     -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
+    width: 75%;
   }
-  .grid .col-s10 {
+  .col-s10 {
     -ms-flex-preferred-size: 83.33333%;
         flex-basis: 83.33333%;
+    width: 83.33333%;
   }
-  .grid .col-s11 {
+  .col-s11 {
     -ms-flex-preferred-size: 91.66667%;
         flex-basis: 91.66667%;
+    width: 91.66667%;
   }
-  .grid .col-s12 {
+  .col-s12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .grid .col-m1 {
+  .col-m1 {
     -ms-flex-preferred-size: 8.33333%;
         flex-basis: 8.33333%;
+    width: 8.33333%;
   }
-  .grid .col-m2 {
+  .col-m2 {
     -ms-flex-preferred-size: 16.66667%;
         flex-basis: 16.66667%;
+    width: 16.66667%;
   }
-  .grid .col-m3 {
+  .col-m3 {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
+    width: 25%;
   }
-  .grid .col-m4 {
+  .col-m4 {
     -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
+    width: 33.33333%;
   }
-  .grid .col-m5 {
+  .col-m5 {
     -ms-flex-preferred-size: 41.66667%;
         flex-basis: 41.66667%;
+    width: 41.66667%;
   }
-  .grid .col-m6 {
+  .col-m6 {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    width: 50%;
   }
-  .grid .col-m7 {
+  .col-m7 {
     -ms-flex-preferred-size: 58.33333%;
         flex-basis: 58.33333%;
+    width: 58.33333%;
   }
-  .grid .col-m8 {
+  .col-m8 {
     -ms-flex-preferred-size: 66.66667%;
         flex-basis: 66.66667%;
+    width: 66.66667%;
   }
-  .grid .col-m9 {
+  .col-m9 {
     -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
+    width: 75%;
   }
-  .grid .col-m10 {
+  .col-m10 {
     -ms-flex-preferred-size: 83.33333%;
         flex-basis: 83.33333%;
+    width: 83.33333%;
   }
-  .grid .col-m11 {
+  .col-m11 {
     -ms-flex-preferred-size: 91.66667%;
         flex-basis: 91.66667%;
+    width: 91.66667%;
   }
-  .grid .col-m12 {
+  .col-m12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .grid .col-l1 {
+  .col-l1 {
     -ms-flex-preferred-size: 8.33333%;
         flex-basis: 8.33333%;
+    width: 8.33333%;
   }
-  .grid .col-l2 {
+  .col-l2 {
     -ms-flex-preferred-size: 16.66667%;
         flex-basis: 16.66667%;
+    width: 16.66667%;
   }
-  .grid .col-l3 {
+  .col-l3 {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
+    width: 25%;
   }
-  .grid .col-l4 {
+  .col-l4 {
     -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
+    width: 33.33333%;
   }
-  .grid .col-l5 {
+  .col-l5 {
     -ms-flex-preferred-size: 41.66667%;
         flex-basis: 41.66667%;
+    width: 41.66667%;
   }
-  .grid .col-l6 {
+  .col-l6 {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    width: 50%;
   }
-  .grid .col-l7 {
+  .col-l7 {
     -ms-flex-preferred-size: 58.33333%;
         flex-basis: 58.33333%;
+    width: 58.33333%;
   }
-  .grid .col-l8 {
+  .col-l8 {
     -ms-flex-preferred-size: 66.66667%;
         flex-basis: 66.66667%;
+    width: 66.66667%;
   }
-  .grid .col-l9 {
+  .col-l9 {
     -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
+    width: 75%;
   }
-  .grid .col-l10 {
+  .col-l10 {
     -ms-flex-preferred-size: 83.33333%;
         flex-basis: 83.33333%;
+    width: 83.33333%;
   }
-  .grid .col-l11 {
+  .col-l11 {
     -ms-flex-preferred-size: 91.66667%;
         flex-basis: 91.66667%;
+    width: 91.66667%;
   }
-  .grid .col-l12 {
+  .col-l12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .grid .col-xl1 {
+  .col-xl1 {
     -ms-flex-preferred-size: 8.33333%;
         flex-basis: 8.33333%;
+    width: 8.33333%;
   }
-  .grid .col-xl2 {
+  .col-xl2 {
     -ms-flex-preferred-size: 16.66667%;
         flex-basis: 16.66667%;
+    width: 16.66667%;
   }
-  .grid .col-xl3 {
+  .col-xl3 {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
+    width: 25%;
   }
-  .grid .col-xl4 {
+  .col-xl4 {
     -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
+    width: 33.33333%;
   }
-  .grid .col-xl5 {
+  .col-xl5 {
     -ms-flex-preferred-size: 41.66667%;
         flex-basis: 41.66667%;
+    width: 41.66667%;
   }
-  .grid .col-xl6 {
+  .col-xl6 {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    width: 50%;
   }
-  .grid .col-xl7 {
+  .col-xl7 {
     -ms-flex-preferred-size: 58.33333%;
         flex-basis: 58.33333%;
+    width: 58.33333%;
   }
-  .grid .col-xl8 {
+  .col-xl8 {
     -ms-flex-preferred-size: 66.66667%;
         flex-basis: 66.66667%;
+    width: 66.66667%;
   }
-  .grid .col-xl9 {
+  .col-xl9 {
     -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
+    width: 75%;
   }
-  .grid .col-xl10 {
+  .col-xl10 {
     -ms-flex-preferred-size: 83.33333%;
         flex-basis: 83.33333%;
+    width: 83.33333%;
   }
-  .grid .col-xl11 {
+  .col-xl11 {
     -ms-flex-preferred-size: 91.66667%;
         flex-basis: 91.66667%;
+    width: 91.66667%;
   }
-  .grid .col-xl12 {
+  .col-xl12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=framework.css.map */
