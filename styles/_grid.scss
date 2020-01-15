@@ -1,0 +1,11 @@
+$breakpoints: s m l xl;
+.grid {
+  display: flex;
+  @each $breakpoint in $breakpoints {
+    @for $i from 1 to 13 {
+      .col-#{$breakpoint}#{$i}{
+        flex-basis: $i*100%/12;
+      }
+    }
+  }
+}
