@@ -1,17 +1,36 @@
-$breakpoints: (s:480px, m:768px, l:992px, xl:1200px);
+$breakpoints: (s:480px, md:768px, lg:992px, xl:1200px);
 
 .grid,
 .row {
   display: flex;
 }
+@mixin specifiy-type($property, $number){
+  @if($property==width){
+    flex-basis: $number * 100% / 12;
+    #{$property}: $number * 100% / 12;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  @else{
+    #{$property}: 0.25rem * $number;
+  }
+}
 
-@each $breakpoint, $size in $breakpoints {
-  @media screen and (min-width:#{$size}) {
-    @for $i from 1 to 13 {
-      .col-#{$breakpoint}#{$i}{
-        flex-basis: $i*100%/12;
-        width: $i*100%/12;
+@mixin generator($class, $times, $type){
+  @each $breakpoint, $size in $breakpoints {
+    @for $i from 1 to $times + 1 {
+      .#{$class}-#{$i} {
+        @include specifiy-type($type, $i);
+      }
+    }
+    @media screen and (min-width: #{$size}) {
+      @for $i from 1 to $times + 1 {
+        .#{$class}-#{$breakpoint}#{$i} {
+          @include specifiy-type($type, $i);
+        }
       }
     }
   }
 }
+
+@include generator(col, 12, width);
